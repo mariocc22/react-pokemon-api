@@ -8,6 +8,29 @@
 
 :root {
   --clr-shadow: black;
+  --electric: #f8d030;
+  --normal: #a8a878;
+  --fire: #f08030;
+  --water: #6890f0;
+  --ice: #98d8d8;
+  --rock: #b8a038;
+  --flying: #a890f0;
+  --grass: #78c850;
+  --psychic: #f85888;
+  --ghost: #705898;
+  --bug: #a8b820;
+  --poison: #a040a0;
+  --ground: #e0c068;
+  --dragon: #7038f8;
+  --steel: #b8b8d0;
+  --fighting: #c03028;
+  --dark: #705848;
+  --default: #2a1a1f;
+}
+
+h1 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: normal;
 }
 
 img {
@@ -20,16 +43,35 @@ form {
   margin: 20px auto;
 }
 
+form button {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  background-color: #101010;
+  color: white;
+  border-radius: 0.25rem;
+  border: none;
+}
+
 input {
   width: 100%;
   padding: 10px;
 }
 
+.pokemon-cont {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin: 3rem 0;
+}
 .poke-card {
   position: relative;
   height: fit-content;
   font-family: "Roboto Mono", monospace;
-  max-width: 300px;
+  width: 300px;
   border-radius: 4px;
   color: #000;
   text-align: center;
@@ -81,4 +123,65 @@ input {
 .poke-img {
   width: 180px;
   border-radius: 50%;
+  background: radial-gradient(rgb(0, 0, 0) 33%, rgb(0, 0, 0) 33%) 0% 0% / 5px
+    5px;
+}
+
+.poke-img.shadow {
+  background: none;
+}
+
+[data-color="electric"] {
+  background: radial-gradient(black 33%, var(--electric) 33%) 0% 0% / 5px 5px;
+}
+[data-color="normal"] {
+  background: radial-gradient(black 33%, var(--normal) 33%) 0% 0% / 5px 5px;
+}
+[data-color="fire"] {
+  background: radial-gradient(black 33%, var(--fire) 33%) 0% 0% / 5px 5px;
+}
+[data-color="water"] {
+  background: radial-gradient(black 33%, var(--water) 33%) 0% 0% / 5px 5px;
+}
+[data-color="ice"] {
+  background: radial-gradient(black 33%, var(--ice) 33%) 0% 0% / 5px 5px;
+}
+[data-color="rock"] {
+  background: radial-gradient(black 33%, var(--rock) 33%) 0% 0% / 5px 5px;
+}
+[data-color="flying"] {
+  background: radial-gradient(black 33%, var(--flying) 33%) 0% 0% / 5px 5px;
+}
+[data-color="grass"] {
+  background: radial-gradient(black 33%, var(--grass) 33%) 0% 0% / 5px 5px;
+}
+[data-color="psychic"] {
+  background: radial-gradient(black 33%, var(--psychic) 33%) 0% 0% / 5px 5px;
+}
+[data-color="ghost"] {
+  background: radial-gradient(black 33%, var(--ghost) 33%) 0% 0% / 5px 5px;
+}
+[data-color="bug"] {
+  background: radial-gradient(black 33%, var(--bug) 33%) 0% 0% / 5px 5px;
+}
+[data-color="poison"] {
+  background: radial-gradient(black 33%, var(--poison) 33%) 0% 0% / 5px 5px;
+}
+[data-color="ground"] {
+  background: radial-gradient(black 33%, var(--ground) 33%) 0% 0% / 5px 5px;
+}
+[data-color="dragon"] {
+  background: radial-gradient(black 33%, var(--dragon) 33%) 0% 0% / 5px 5px;
+}
+[data-color="steel"] {
+  background: radial-gradient(black 33%, var(--steel) 33%) 0% 0% / 5px 5px;
+}
+[data-color="fighting"] {
+  background: radial-gradient(black 33%, var(--fighting) 33%) 0% 0% / 5px 5px;
+}
+[data-color="dark"] {
+  background: radial-gradient(black 33%, var(--dark) 33%) 0% 0% / 5px 5px;
+}
+[data-color="default"] {
+  background: radial-gradient(black 33%, var(--default) 33%) 0% 0% / 5px 5px;
 }
